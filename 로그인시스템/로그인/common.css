@@ -1,0 +1,81 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#container {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+
+h1 {
+  margin-bottom: 2rem;
+  color: #333;
+  font-size: 2rem;
+}
+
+input[type="text"],
+input[type="password"],
+button {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem 0;
+  border: 0.1rem solid #ccc;
+  border-radius: 0.5rem;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+#signup-link,
+#login-link,
+#logout-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #007bff;
+  text-decoration: none;
+}
+
+#signup-link:hover,
+#login-link:hover,
+#logout-link:hover {
+  text-decoration: underline;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.875rem;
+  height: 1rem;
+  /* 높이 고정 */
+  visibility: hidden;
+  /* 기본적으로 숨김 */
+}
+
+.error-message.visible {
+  visibility: visible;
+  /* 오류 발생 시 표시 */
+}
